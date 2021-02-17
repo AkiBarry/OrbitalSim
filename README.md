@@ -7,6 +7,8 @@ Simulation of satellites affected by the gravity of black and white holes.
 
 **Middle Click:** Create Whitehole
 
+**Z:** Undo
+
 **P:** Pause
 
 ![image](https://user-images.githubusercontent.com/32370065/108196472-e1915b00-7164-11eb-93d4-bbf6542a31c9.png)
