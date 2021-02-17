@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Files\Canvas">
+      <UniqueIdentifier>{178d4edb-e067-48cb-89e0-b90325287381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Colour">
+      <UniqueIdentifier>{b272de95-f105-4100-bd61-dd59a76efe19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Debug">
+      <UniqueIdentifier>{ba696e7d-488a-4ddb-b2b0-f9816ccca711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Container">
+      <UniqueIdentifier>{1d9fab3e-b76e-4232-9277-1814cf74b0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Math">
+      <UniqueIdentifier>{a5a8f9e0-3736-4945-ab97-c47ea9acdddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Math\Vector">
+      <UniqueIdentifier>{ec2852ff-6903-45e5-bd03-b1fa39998ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Math\Matrix">
+      <UniqueIdentifier>{e35adc54-4b70-4521-aae9-76f5d4e7acf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\String">
+      <UniqueIdentifier>{502f416c-7fdf-4392-9d39-38691cd7b8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Memory">
+      <UniqueIdentifier>{4f07b3d9-28f4-4e46-9396-895bd43219af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Utility">
+      <UniqueIdentifier>{de5d6da1-9b84-43a1-88f8-75e4e5f29faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Variable">
+      <UniqueIdentifier>{d6068c03-d2cf-4640-99a2-1fce9b7dd679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Main">
+      <UniqueIdentifier>{10106aa9-4709-4684-a078-5dba6f4a87b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Common">
+      <UniqueIdentifier>{76065acf-7502-44c3-b960-9f008279ffab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Game">
+      <UniqueIdentifier>{2ecc9376-7b13-4077-9dea-7813c0f8d81f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Game\Player">
+      <UniqueIdentifier>{940e0458-b596-409d-b0ef-f18210782a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Game\Blip">
+      <UniqueIdentifier>{2fa55cb9-2430-4d74-8566-687a759fc661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Game\Entity">
+      <UniqueIdentifier>{60c6013c-fdcb-41b0-bbd5-5d2bf410607e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Game\Loops">
+      <UniqueIdentifier>{af950d6b-028b-444f-a297-5291d5268a0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Canvas.hpp">
+      <Filter>Files\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Colour.hpp">
+      <Filter>Files\Colour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Container.hpp">
+      <Filter>Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math.hpp">
+      <Filter>Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Matrix.hpp">
+      <Filter>Files\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Vector.hpp">
+      <Filter>Files\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\String.hpp">
+      <Filter>Files\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Memory.hpp">
+      <Filter>Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Utility.hpp">
+      <Filter>Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Variable.hpp">
+      <Filter>Files\Variable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Assert.hpp">
+      <Filter>Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Common.hpp">
+      <Filter>Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DbgFlags.hpp">
+      <Filter>Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Log.hpp">
+      <Filter>Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Spew.hpp">
+      <Filter>Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Blip.hpp">
+      <Filter>Files\Game\Blip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Entity.hpp">
+      <Filter>Files\Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Player.hpp">
+      <Filter>Files\Game\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Game.hpp">
+      <Filter>Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Particle.hpp">
+      <Filter>Files\Game\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Canvas.cpp">
+      <Filter>Files\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Colour.cpp">
+      <Filter>Files\Colour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math.cpp">
+      <Filter>Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Matrix.cpp">
+      <Filter>Files\Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Vector.cpp">
+      <Filter>Files\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Memory.cpp">
+      <Filter>Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Utility.cpp">
+      <Filter>Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Variable.cpp">
+      <Filter>Files\Variable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Inertia.cpp">
+      <Filter>Files\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

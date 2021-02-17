@@ -1,0 +1,10 @@
+*.exe
+*.ilk
+*.iobj
+*.ipdb
+*.pdb
+*.tlog
+*.idb
+*.log
+*.obj
+proj/.vs/
