@@ -320,17 +320,22 @@ void Render(sf::RenderWindow * Win)
 		break;
 	}
 	case CGame::State::LOSE:
-		NCanvas::Rect(CVec2(0.f, 0.f), CVec2(1600.f, 900.f), CColour(255, 0, 0));
-
-		NCanvas::Text("You Lose", 20, CVec2(730.f, 400.f), CColour(255, 255, 255), CColour(255, 0, 0));
-		NCanvas::Text(std::to_string(CurPlayer.Blocks.size()), 50, CVec2(850.f, 400.f), CColour(CMath::RandInt(70, 200), CMath::RandInt(70, 200), CMath::RandInt(70, 200)), CColour(0, 0, 0), false, 1.f);
-		NCanvas::Text("Press Enter to Play Again", 20, CVec2(700.f, 450.f), CColour(255, 255, 255), CColour(255, 0, 0));
 		break;
 	case CGame::State::PAUSED:
-		NCanvas::Rect(CVec2(0.f, 0.f), CVec2(1600.f, 900.f), CColour(255, 255, 255, 255));
+		NCanvas::Rect(CVec2(0.f, 0.f), CVec2(1600.f, 900.f), CColour(0, 0, 0));
 
-		NCanvas::Text("Paused - AVAVAVAVAVA", 20, CVec2(730.f, 400.f), CColour(0, 0, 0), CColour(255, 0, 0));
-		NCanvas::Text("Press P to Resume", 20, CVec2(710.f, 450.f), CColour(255, 0, 0), CColour(255, 0, 0));
+		for (auto p : particles)
+		{
+			NCanvas::Line(p.Pos, p.Pos - p.velocity, CColour(255, 255, 255));
+
+			NCanvas::Rect(p.Pos - CVec2(2.f, 2.f), CVec2(4.f, 4.f), CHSB(CMath::RandFloat(0.f, 1.f), 1.f, 1.f).ToColour());
+		}
+
+		for (auto h : holes)
+		{
+			NCanvas::OutlinedRect(std::get<0>(h) - CVec2(5.f, 5.f), CVec2(10.f, 10.f), std::get<1>(h) ? CColour(0, 0, 0) : CColour(255, 255, 255), std::get<1>(h) ? CColour(255, 255, 255) : CColour(0, 0, 0));
+		}
+
 		break;
 	}
 }
